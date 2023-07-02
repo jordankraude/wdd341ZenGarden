@@ -59,6 +59,7 @@ h3 {
 }
 
 
+
 #container{
     position: relative;
     display: block;
@@ -89,8 +90,9 @@ h3 {
     height: 100%;
     line-height: 140px;
     font-size: 85px;
-    animation: scroll 5s linear infinite;
+    animation: scroll 10s linear infinite;
 }
+
 
 
 
@@ -110,16 +112,25 @@ h3 {
 
 @keyframes scroll{
 0% {
-    transform: translate(-64%,0);
-
+    transform: translate(0,0);
 }
-50% {
-    transform: translate(-36%,0);
-}
-100% {
-    transform: translate(-64%,0);
-
+100%
+{
+    transform: translate(-100%,0);
 }
 }
-
+/* 
+@keyframes scroll{
+	0% {
+		transform: translate(-64%,0);
+	
+	}
+	50% {
+		transform: translate(-36%,0);
+	}
+	100% {
+		transform: translate(-64%,0);
+	
+	}
+	} */
 
