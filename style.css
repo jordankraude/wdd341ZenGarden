@@ -5,6 +5,8 @@ body {
   height: auto;
 }
 
+p {font-size: 20px}
+
 header h2 {
   animation: titleOpacity 5s;
   font-size: 24px;
@@ -287,7 +289,8 @@ h3 {
         background-color: #292929;
         color: white;
     }
-    33%{background-color: #666666;}
+    33%{background-color: #666666;
+    color:white}
 
     66%{background-color: #E0E0E0;
     color: black;}
@@ -318,7 +321,8 @@ h3 {
     33%{background-color: #292929;
     color:white}
 
-    66%{background-color: #666666;}
+    66%{background-color: #666666;
+    color:white}
 
     100%{background-color: #E0E0E0;
     color:black}
