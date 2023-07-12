@@ -27,8 +27,17 @@ header {
     grid-template-rows: 1fr 1fr;
     height: 260px;
     margin: 30px 0px;
+    position: sticky;
+    top: 1rem;
+
+    margin-bottom: 0px;
 }
-.page-wrapper{ grid-column: 2/5;}
+body {background-color: black;}
+
+body div {background-color: white;}
+
+.page-wrapper{ grid-column: 2/5;
+padding: 20px;}
 
 #head1{
 grid-column: 1/6;
@@ -63,36 +72,93 @@ h3 {
 #container{
     position: relative;
     display: block;
-    width: 100%;
     height: 140px;
     left: 50%;
     top: -10px;
     transform: translate(-50%, -50%);
+    margin: auto auto;
     margin-top: 0px;
 }
 
 .scroll{
     position: absolute;
     display: block;
-    margin: auto auto;
     white-space: nowrap;
-    min-width: 100%;
     height: 100%;
+
+    margin: auto auto;
     margin-top: 0px;
 }
 
 .scroll span {
     display: inline-block;
-    padding-left: 100%;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
-    min-width: 100%;
     height: 100%;
     line-height: 140px;
     font-size: 85px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 5s linear infinite;
+    
 }
 
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+    background-color: black;
+}
+
+.hor {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 100px;
+    height: 5px;
+    background-color:white;
+animation: growing2 5s infinite}
+.ver {width: 5px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 48px;
+    bottom: 150px}
+.rotateLeft {width: 70px;
+    height: 5px;
+    background-color:white;
+    rotate: 45deg;
+    position: relative;
+    top: 50px;
+    right: 34px;
+    animation: growing 5s infinite}
+.rotateRight {width: 5px;
+    height: 70px;
+    background-color:white;
+    position: relative;
+    left: 34px;
+    bottom: 32px;}
+.star2 {
+    top: -30px;
+    right: 0px;
+    scale: .6;
+    animation-delay: 2s ;
+}
+
+.star3 {
+    top: 0px;
+    left: 20px;
+    scale: .8;
+    animation-delay: 3s;
+}
+
+
+@keyframes growing {
+  0% { transform: scale(1);opacity:1 }
+  50% { transform: scale(.8);}
+  100% { transform: scale(1);opacity:1 }
+}
+
+@keyframes growing2 {
+  0% { transform: scale(1); opacity: .5 }
+  50% { transform: scale(1.1); opacity: 1;}
+  100% { transform: scale(1); opacity: .5}
+}
 
 
 
@@ -110,27 +176,27 @@ h3 {
     100% {color: white;}
 }
 
-@keyframes scroll{
+/* @keyframes scroll{
 0% {
     transform: translate(0,0);
 }
 100%
 {
-    transform: translate(-100%,0);
+    transform: translate(-150%,0);
 }
-}
-/* 
+} */
+
 @keyframes scroll{
 	0% {
-		transform: translate(-64%,0);
+		transform: translate(0%,0);
 	
 	}
 	50% {
-		transform: translate(-36%,0);
+		transform: translate(150%,0);
 	}
 	100% {
-		transform: translate(-64%,0);
+		transform: translate(0%,0);
 	
 	}
-	} */
+	}
 
